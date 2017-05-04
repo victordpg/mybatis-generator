@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="/Users/Victor/Documents/ws_neon/test/lib/mysql-connector-java-5.1.39-bin.jar" />
+
+	<!-- <context id="context1">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF8"
+			driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+		<javaModelGenerator targetPackage="com.wsm.bigdata.dao.model"
+			targetProject="angular2_back_end" />
+		<sqlMapGenerator targetPackage="com.wsm.bigdata.dao.mapper"
+			targetProject="angular2_back_end" />
+		<javaClientGenerator targetPackage="com.wsm.bigdata.dao.mapper"
+			targetProject="angular2_back_end" type="XMLMAPPER" />
+		<table schema="test" tableName="t_account">
+		<table schema="test" tableName="rslt_customer_stats"></table>
+		<table schema="test" tableName="rslt_payback_stats"></table>
+		<table schema="test" tableName="rslt_payback_qx_stats"></table>
+	</context> -->
+	<context id="context2">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF8"
+			driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+		<javaModelGenerator targetPackage="com.wsm.bigdata.dao.model.sidemenu" targetProject="spring_back_end" />
+		<sqlMapGenerator targetPackage="com.wsm.bigdata.dao.mapper.sidemenu" targetProject="spring_back_end" />
+		<javaClientGenerator targetPackage="com.wsm.bigdata.dao.mapper.sidemenu" targetProject="spring_back_end" type="XMLMAPPER" />
+		<table schema="test" tableName="t_menu_level1"></table>
+		<table schema="test" tableName="t_menu_level2"></table>
+		<table schema="test" tableName="t_menu_level3"></table>
+	</context>
+</generatorConfiguration>
